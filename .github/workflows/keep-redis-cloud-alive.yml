@@ -27,7 +27,7 @@ jobs:
             -H "Content-Type: application/json" \
             -d '{"email":"jane@doe.com","password":"password123"}')
 
-          token=$(echo $response | jq -r '.access-token')
+          token=$(echo $response | jq -r '."access-token"')
 
           if [ "$token" = "null" ] || [ -z "$token" ]; then
             echo "Login failed or token not found"
