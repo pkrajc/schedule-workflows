@@ -6,7 +6,7 @@ name: Keep Expense Tracker API Azure App Service Alive
 on:
   # Triggers the workflow on schedule event
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
